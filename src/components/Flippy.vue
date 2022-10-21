@@ -71,7 +71,7 @@ function handleTransitionEnd() {
   goForward()
 
   if (counter.value !== props.indexToStop) {
-    setTimeout(init, 2)
+    setTimeout(init)
   }
 }
 
@@ -109,6 +109,7 @@ onMounted(() => {
   background-color: transparent;
   width: 140px;
   height: 130px;
+  transform: translateY(-50%);
   perspective: 1000px;
 }
 
@@ -135,7 +136,7 @@ onMounted(() => {
 
 .flip-card.-hover .flip-card-inner {
   transform: rotateX(-180deg);
-  transition: transform 0.2s;
+  transition: transform 0.4s;
 }
 
 .flip-card-front,
